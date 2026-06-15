@@ -37,6 +37,13 @@ open ./ActivityMonitor.app
 
 Then press **Ctrl+Shift+Esc** to summon the window.
 
+## App icon
+
+`build-app.sh` automatically bakes an app icon into the bundle. Drop a square
+PNG into `assets/` (it uses `assets/AppIcon.png` if present, otherwise the first
+PNG it finds) and rebuild — it generates a full multi-resolution `AppIcon.icns`
+via `sips`/`iconutil` and wires it into the Info.plist.
+
 ## How the stats are gathered
 
 - **CPU** — `host_statistics(HOST_CPU_LOAD_INFO)` and `host_processor_info(PROCESSOR_CPU_LOAD_INFO)`, diffing tick counters between samples.
