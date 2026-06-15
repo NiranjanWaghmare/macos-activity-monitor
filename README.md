@@ -1,4 +1,4 @@
-# Activity Monitor (macOS clone)
+# Activity Monitor (macOS)
 
 A native SwiftUI re-creation of macOS **Activity Monitor**, with a global
 **Ctrl + Shift + Esc** hotkey to summon it — the same combo that opens Task
